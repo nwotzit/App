@@ -106,7 +106,7 @@ struct Home: View {
             
             ForEach(1...8, id: \.self){index in
                 Circle()
-                    .fill(.blue.gradient.opacity(0.5))
+                    .fill(.green.gradient.opacity(0.5))
                     .frame(width: 150, height: 150)
                     .offset(x: startAnimation ? 0 : 75)
                     .rotationEffect(.init(degrees: Double(index * 45)))
@@ -127,6 +127,8 @@ struct Home: View {
     }
     
 }
+
+
 @ViewBuilder
 func Background()-> some View {
     Image("BG")
